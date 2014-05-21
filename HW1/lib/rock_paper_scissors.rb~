@@ -6,7 +6,7 @@ class RockPaperScissors
 
   def self.winner(player1, player2)
     if STRATEGY.include? player1[1] and STRATEGY.include? player2[1]
-        return player1 if player1[1] == player2[1] or BEATS.include? [player1[1],player2[1]]
+        return player 1 if player1[1] == player2[1] or BEATS.include? [player1[1],player2[1]]
         player2
     else 
 	raise NoSuchStrategyError, "Strategy must be one of R,P,S"  
