@@ -19,8 +19,4 @@ class JellyBean < Dessert
     @name = "#{flavor} jelly bean"
     @calories = 5
   end
-  def delicious?
-    return false if @flavor == "licorice"
-    super 
-  end
 end
